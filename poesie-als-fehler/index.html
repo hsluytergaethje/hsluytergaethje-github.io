@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Poesie als Fehler</title>
+
+		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="up.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+		<div class="slides">
+	<!-- SET IMAGE TO UPPER RIGHT CORNER FOR ALL SLIDES -->
+	<section data-markdown=""
+        	data-separator="^\n--\n" 
+        	data-separator-vertical="^\n---\n" 
+        	data-separator-notes="^::" 
+		data-charset="utf-8" 
+        	data-background-image="images/Phillogo.svg" 
+        	data-background-size="150px"
+        	data-background-position="left 20px top 20px">
+	<!-- BEGINNING OF SLIDE CONTENT -->
+	<textarea data-template>
+		## Poesie als Fehler
+		### Ein **Tool Misuse** Experiment 
+
+		--
+
+		## Teaser
+
+		--
+
+		## Gliederung
+		1. Problemhorizont
+		2. Operationalisierung 
+		3. Analyse
+		4. Kritik und Ausblick
+
+		--
+
+		## 1. Problemhorizont
+		
+		---
+		### Annäherung durch Abweichung
+		* 
+		*
+		*
+
+		---
+		### Idee 
+		* Standardsprache
+		* NLP-Tools
+		* Fehler = Merkmal? 
+
+		--
+		## 2. Operationalisierung
+
+		---
+		### Ansatz 
+		* Kein Gold-Standard 
+		* Workaround
+		
+		---
+
+		### Korpora
+		* Lyrikkorpus
+		  * 12 Autorïnnen 
+		  * von Goethe bis Tucholsky
+		  * 
+		* Kanonkorpus
+		  * 100 deutschsprachige Romane
+		  * 19. Jahrhundert
+
+
+		---
+		### Pipeline
+		<img height="540" data-src="images/pipeline_paper.png">
+
+		---
+		### Potenzielle Fehler 
+
+		--
+		## 3. Analyse
+
+		---
+		### Fehlertypologisierung
+
+		---
+		### Ergebnisse
+		* Abbildungen
+
+		---
+		### Resümee
+		* "Lyrische Störung": Prosodische Deformation, Lyrische Topographie
+		* Epik und Lyrik: Kreative Lexik
+
+		--
+		## 4. Kritik und Ausblick
+		
+		---
+
+		* 
+		* 
+		* 
+
+		--
+
+		## Zugang
+		* [Korpora und Code](https://gitup.uni-potsdam.de/sluytergaeth/poetry_as_error) auf GitLab
+		* Tools:
+		  * [spacy](spacy.io/)
+		  * [stanza](https://stanfordnlp.github.io/stanza/)
+		  * [RNNTagger](https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger/)
+		  * [Treetagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
+
+		--
+
+		## Bibliographie
+		</textarea>
+	<!-- END OF SLIDE CONTENT -->
+	</section>
+		</div>
+		</div>
+
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
