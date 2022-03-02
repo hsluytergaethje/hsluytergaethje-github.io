@@ -56,24 +56,26 @@
 		## 1. Problemhorizont
 		
 		---
-		### Annäherung durch Abweichung
-		*  
-		*
-		*
+		### Ausgangslage
+		* *NLP-Tools* werden für die Vorverarbeitung literarischer Texte verwendet
+		* *NLP-Tools* sind meist auf der Domäne der Zeitungen trainiert
+		* Literarische Texte weichen auf Grund von historischer und/oder ästhetischer Eigenart von der Standardsprache der Zeitungen ab </br> &#8594; *Perfomance-Drop* der *NLP-Tools* auf literarischen Texte.
 
 		---
-		### Idee 
-		* Standardsprache
-		* NLP-Tools
-		* Fehler = Merkmal? 
+		### Annäherung durch Abweichung
+		* Fehlerhaftigkeit der *NLP-Tools* als computationelles Verständnis des Abweichungscharakters literarischer Texte? 
+		* Produzierte Fehler als Charakteristika von Literatur? </br> &#8594; Provozieren von möglichst fehlerhaftem Output durch das Prozessieren von Lyrik, da "Tendenz zu erhöhter Devianz"
 
 		--
 		## 2. Operationalisierung
 
 		---
 		### Ansatz 
-		* Kein Gold-Standard 
-		* Workaround
+		* Erzeugen von Fehlern zum Erkenntnisgewinn über literarische Texte
+		* Kein Gold-Standard zur Erkennung von Fehlern
+		* Workaround: 
+		  * Automatische Annotation (Tokenisierung, POS-Tagging, Lemmatisierung) von Lyrik- und Prosakorpus
+		  * Überprüfen der produzierten Lemmata + POS-Tag in Wörterbuch
 		
 		---
 
@@ -339,7 +341,7 @@
 		
 		Verbesserung der Pipeline mithilfe eines Gold-Standard-Sets
 		* Annotation von Token, PoS, Lemma </br>  &#8594; Was sind Toolfehler?
-		* Annotation von Deviansinformation an Nomen, Verben, Adjektive </br>  &#8594; Sagen die typisierten Fehler tatsächlich etwas über die Spezifik des Literarischen aus?
+		* Annotation von Devianzinformation an Nomen, Verben, Adjektive </br>  &#8594; Sagen die typisierten Fehler tatsächlich etwas über die Spezifik des Literarischen aus?
 
 		--
 		## Zugang
