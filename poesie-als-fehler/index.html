@@ -94,7 +94,7 @@
 		---
 		### Annäherung durch Abweichung
 		* Fehlerhaftigkeit der *NLP-Tools* als computationelles Verständnis des Abweichungscharakters literarischer Texte? 
-		* Produzierte Fehler als Charakteristika von Literatur? </br> &#8594; Provozieren von möglichst fehlerhaftem Output durch das Prozessieren von Lyrik, da "Tendenz zu erhöhter Devianz" (Müller-Zettelmann 2000: 100)
+		* Produzierte Fehler als Charakteristika von Literatur? </br> &#8594; Provozieren von möglichst fehlerhaftem Output durch das Prozessieren von Lyrik, da "Tendenz zu erhöhter Devianz" (Müller-Zettelmann 2000: 100) </br> &#8594; **Tool Misuse** 
 
 		--
 		## 2. Operationalisierung
@@ -102,10 +102,9 @@
 		---
 		### Ansatz 
 		* Erzeugen von Fehlern zum Erkenntnisgewinn über literarische Texte
-		* Kein Gold-Standard zur Erkennung von Fehlern
-		* Workaround: 
 		  * Automatische Annotation (Tokenisierung, POS-Tagging, Lemmatisierung) von Lyrik- und Posakorpus
-		  * Überprüfen der produzierten Lemmata + POS-Tag in Wörterbuch
+		* Kein Gold-Standard zur Erkennung von Fehlern
+		* Workaround: Überprüfen der produzierten Lemmata + POS-Tag in Wörterbuch
 		
 		---
 
@@ -330,7 +329,7 @@
 		<tr>
 			<td>PREFIXED</td>
 			<td>O was muß es die Engel gekostet haben,</br>nicht aufzusingen plötzlich, wie man <span style="color:#8b2939">aufweint</span><a href="#9"><sup>13</sup></a></td>
-			<td>Wenn ein Type mit einem Präfix aus einer vorgegeben Liste beginnt, entferne Präfix aus Lemma und prüfe </td>
+			<td>Wenn ein Type mit einem Präfix aus einer vorgegeben Liste beginnt, entferne Präfix aus Lemma und prüfe im Wörterbuch; wenn im Wörterbuch zu finden, typisiere</td>
   		</tr>
 		</table>
 
@@ -375,7 +374,7 @@
 
 		--
 		## Zugang
-		* [Artikel]() in Book of Abstracts
+		* [Artikel](https://www.dhd2022.de/wp-content/uploads/2022/03/DHd2022_Book-of-Abstracts_Edition-01_2022-03-06_reduziert.pdf) in Book of Abstracts
 		* Korpora und Code auf [GitLab](https://gitup.uni-potsdam.de/sluytergaeth/poetry_as_error)
 		* Tools:
 		  * [spacy](spacy.io/)
