@@ -22,7 +22,6 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/up.css">
-
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	-->
@@ -57,10 +56,10 @@
 		<table>
 		<tr>
 			<td style="font-size: 30px; border-bottom: 0px;" align="left">
-				<span class="fragment highlight-green" data-fragment-index="1">Ach</span> nur einmal im Leben! - Eduard Mörike
+				<span class="fragment highlight-green" data-fragment-index="1">Ach</span> nur einmal im Leben! - Eduard Mörike<a href="#7"><sup>1</sup></a>
 			</td>
 			<td style="font-size: 30px; border-bottom: 0px;" border: none>
-				<span class="fragment highlight-green" data-fragment-index="1">Ah</span> Just One More Time in Life! - Eduard Mörike
+				<span class="fragment highlight-green" data-fragment-index="1">Ah</span> Just One More Time in Life! - Eduard Mörike<a href="#7"><sup>2</sup></a>
 			</td>
 		<tr>
 			<td style="font-size: 24px; border-bottom:0px; margin-top: 0px;">
@@ -138,9 +137,10 @@
 		
 		--
 
+		<!--
 		## 1. Research Question
 		
-		---
+		--- -->
 		### Starting point
 		* Literary texts deviate massively from the standard language used e.g. in newspapers due to their asthetic and historic characteristics  
 		* NLP tools are used for preprocessing literary texts but are trained on the newspaper domain </br> &#8594; Performance drop on literary texts
@@ -183,7 +183,7 @@
 		<img height="540" data-src="images/potential_errors.png">
 
 		--
-		## 3. Analysis
+		## Analysis
 
 		---
 		
@@ -206,19 +206,19 @@
 			<td>Character Level</td>
 			<td>PUNC, SHORT</td>
 			<td>If a word type has only two characters or less, type.</td>
-			<td><span style="color:#8b2939">O</span> wie kenn ich sie so gut!<a href="#2"><sup>2</sup></a></td>
+			<td><span style="color:#8b2939">O</span> wie kenn ich sie so gut!<a href="#7"><sup>3</sup></a></td>
   		</tr>
 		<tr>
 			<td>Historic Orthography</td>
 			<td>ORTH_SZ</td>
 			<td>Replace "ß" in the lemma with "ss" and check in the dictionary; if found in the dictionary, type.</td>
-			<td>Lang ausgezogne Töne traurig wechseln <span style="color:#8b2939">läßt</span><a href="#1"><sup>1</sup></a></td> 
+			<td>Lang ausgezogne Töne traurig wechseln <span style="color:#8b2939">läßt</span><a href="#7"><sup>1</sup></a></td> 
   		</tr>
 		<tr>
-			<td>Lyric Topography</td>
+			<td>Lyrical Topography</td>
 			<td>ORTH_UPPER</td>
 			<td>If a word type is at the beginning of a line, replace initial capitalisation of ADJ and VERB with lower case and check in the dictionary; if found in the dictionary, type.</td>
-			<td><span style="color:#8b2939">I</span>st schön zu hören einen langen Nachmittag.<a href="#1"><sup>1</sup></a></td>
+			<td><span style="color:#8b2939">I</span>st schön zu hören einen langen Nachmittag.<a href="#7"><sup>1</sup></a></td>
 		</tr>
 
 		</table>
@@ -236,13 +236,13 @@
 			<td>Prosodic Deformation</td>
 			<td>ELISION_APO, SIMPLE, END, EPITHESIS, CONTRACT</td>
 			<td>If an apostrophe occurs within a word type, type.</td>
-			<td>Im Fenster jenes alt <span style="color:#8b2939">verblichnen</span> Gartensaals<a href="#1"><sup>1</sup></a></td>
+			<td>Im Fenster jenes alt <span style="color:#8b2939">verblichnen</span> Gartensaals<a href="#7"><sup>1</sup></a></td>
 		</tr>
 		<tr>
 			<td>Creative Lexis</td>
 			<td>COMP_DASH, COMP, PART_ADJ, PREFIXED</td>
 			<td>If a word type begins with a prefix from a given list, remove the prefix from the lemma and check the dictionary; if found in the dictionary, type.</td>
-			<td>In ungepflegter <span style="color:#8b2939">Spätherbst-Blumen-Einsamkeit</span>,<a href="#9"><sup>1</sup></a></td>
+			<td>In ungepflegter <span style="color:#8b2939">Spätherbst-Blumen-Einsamkeit</span>,<a href="#7"><sup>1</sup></a></td>
 		</tr>
 
 
@@ -250,7 +250,7 @@
 		
 		--
 
-		## 4. Results
+		## Results
 
 		---
 
@@ -261,7 +261,7 @@
 				<li>Poetry: 53% of word types could be typologised</li>
 				<li>Prose: 60% of word types could be typologised</li>
 				<li>In prose and poetry: <i>Creative Lexis</i> makes up the biggest source of errors &#8594; pipeline errors</li>
-				<li><i>Prosodic Deformation</i> and <i>Lyric Topography</i> occur increasingly in poetry &#8594; lyric "disturbance"?</li>
+				<li><i>Prosodic Deformation</i> and <i>Lyrical Topography</i> occur increasingly in poetry &#8594; lyrical "disturbance"?</li>
 			</ul>
 		</td>
 		<td>
@@ -271,10 +271,10 @@
 
 
 		--
-		## 5. Outlook
+		## Future Work
 		
 		---
-		### Outlook	
+		### Future Work
 		Improvement of the pipeline wth the help of a gold standard data set
 		* Annotation of token, pos and lemma  </br>  &#8594; What are tool errors? 
 		* Annotation of noun, verbs and adjective with deviance information </br>  &#8594; Do the typed errors actually reveal something about the specificity of literature?  
@@ -290,24 +290,20 @@
 		  * [Treetagger](https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
 
 		--
-		## Bibliographie
-		#### Textbeispiele
+		## Bibliography
+		#### Text examples
 		
 		<table cellspacing="0" cellpadding="0" style="font-size: 60%;">
 		<tr>
-			<td>1. Johann Wolfgang Goethe: Wilhelm Tischbeins Idyllen.</td>
+			<td> 1. Eduard Mörike: Brockes.</td>
 		</tr>
 		<tr>
-			<td>2. Theodor Storm: Hinter den Tannen.</td>
+			
+			<td><a href="http://www.cingolani.com/116em.html">2. Eduard Mörike: Brockes, translated by Charles L. Cingolani, 2014.</a></td>
 		</tr>
+
 		<tr>
-			<td>3. Joseph von Eichendorff: Die Zigeunerin.</td>
-		</tr>
-		<tr>
-			<td>4. Kurt Tucholsky: Professoren.</td>
-		</tr>
-		<tr>
-			<td>5. Friedrich Schiller: Die Erwartung.</td>
+			<td>3. Johann Wolfgang Goethe: Wilhelm Tischbeins Idyllen.</td>
 		</tr>
 		</table>
 
