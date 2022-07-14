@@ -24,8 +24,8 @@
 		<link rel="stylesheet" href="dist/up.css">
 
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	-->
 	</head>
+	-->
 	<body>
 		<div class="reveal">
 		<div class="slides">
@@ -83,7 +83,7 @@
 			</td>
 			<td style="font-size: 24px; border-bottom:0px;">
 				<span class="fragment highlight-green" data-fragment-index="1">E</span>xchanges long <span class="fragment highlight-green" data-fragment-index="1">extended</span> tones of sadness
-			<td>
+			</td>
 		</tr>
 		<tr>
 			<td style="font-size: 24px; border-bottom:0px;">
@@ -162,7 +162,7 @@
 		### Pipeline
 		<img height="540" data-src="images/pipeline_en.png">
 
-		---
+		<!--
 		### Corpora - Distribution of tokens
 	
 		|        | Poetry   | Prose     |
@@ -174,6 +174,8 @@
 		|        |          |            |
 		|Types   | 70.422   | 263.042    |
 		
+		-->
+
 		---
 
 		### Potential errors 
@@ -204,19 +206,19 @@
 			<td>Character Level</td>
 			<td>PUNC, SHORT</td>
 			<td>If a word type has only two characters or less, type.</td>
-			<td><span style="color:#8b2939">O</span> wie kenn ich sie so gut!<a href="#9"><sup>1</sup></a></td>
+			<td><span style="color:#8b2939">O</span> wie kenn ich sie so gut!<a href="#2"><sup>2</sup></a></td>
   		</tr>
 		<tr>
 			<td>Historic Orthography</td>
 			<td>ORTH_SZ</td>
 			<td>Replace "ß" in the lemma with "ss" and check in the dictionary; if found in the dictionary, type.</td>
-			<td>Ein kleines Bäuchlein wie ein <span style="color:#8b2939">Fäßchen</span><a href="#9"><sup>2</sup></a> </td>
+			<td>Lang ausgezogne Töne traurig wechseln <span style="color:#8b2939">läßt</span><a href="#1"><sup>1</sup></a></td> 
   		</tr>
 		<tr>
 			<td>Lyric Topography</td>
 			<td>ORTH_UPPER</td>
 			<td>If a word type is at the beginning of a line, replace initial capitalisation of ADJ and VERB with lower case and check in the dictionary; if found in the dictionary, type.</td>
-			<td><span style="color:#8b2939">Mög</span> mit kalten Armen dich ereilen, [...]<a href="#9"><sup>3</sup></a></td>
+			<td><span style="color:#8b2939">I</span>st schön zu hören einen langen Nachmittag.<a href="#1"><sup>1</sup></a></td>
 		</tr>
 
 		</table>
@@ -234,13 +236,13 @@
 			<td>Prosodic Deformation</td>
 			<td>ELISION_APO, SIMPLE, END, EPITHESIS, CONTRACT</td>
 			<td>If an apostrophe occurs within a word type, type.</td>
-			<td>Und, <span style="color:#8b2939">nächt'ger</span> Mücke zu vergleichen,[...]<a href="#9"><sup>4</sup></a></td>
+			<td>Im Fenster jenes alt <span style="color:#8b2939">verblichnen</span> Gartensaals<a href="#1"><sup>1</sup></a></td>
 		</tr>
 		<tr>
 			<td>Creative Lexis</td>
 			<td>COMP_DASH, COMP, PART_ADJ, PREFIXED</td>
 			<td>If a word type begins with a prefix from a given list, remove the prefix from the lemma and check the dictionary; if found in the dictionary, type.</td>
-			<td>O was muß es die Engel gekostet haben,</br>nicht aufzusingen plötzlich, wie man <span style="color:#8b2939">aufweint</span><a href="#9"><sup>5</sup></a></td>
+			<td>In ungepflegter <span style="color:#8b2939">Spätherbst-Blumen-Einsamkeit</span>,<a href="#9"><sup>1</sup></a></td>
 		</tr>
 
 
@@ -388,7 +390,6 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-
 		</script>
 		<!--
 		<script src="dist/reveal.js"></script>
@@ -405,7 +406,7 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-		
+		</script>
 		 -->
 	</body>
 </html>
